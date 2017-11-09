@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.caampued.externalstorage.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saving Data"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data:"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filename:"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/etData"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="90dp"/>
+
+    <EditText
+        android:id="@+id/etFilename"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignRight="@+id/etData"
+        android:layout_alignEnd="@+id/etData" />
+    <Button
+        android:onClick="saveSharedPref"
+        android:id="@+id/btn_SharedPref"
+        android:layout_width="250dp"
+        android:text="Shared Preferences"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"/>
+    <Button
+        android:onClick="saveInternalStorage"
+        android:id="@+id/btn_InternalStorage"
+        android:layout_width="250dp"
+        android:text="Internal Storage"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"/>
+
+
+    <Button
+        android:onClick="saveInternalCache"
+        android:id="@+id/btn_InternalCache"
+        android:layout_width="250dp"
+        android:text="Internal Cache"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"/>
+    <Button
+        android:onClick="saveExternalCache"
+        android:id="@+id/btn_ExternalCache"
+        android:layout_width="250dp"
+        android:text="External Cache"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"/>
+    <Button
+        android:onClick="saveExternalStorage"
+        android:id="@+id/btn_ExternalStorage"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="External Storage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp"/>
+    <Button
+        android:onClick="saveExternalPublic"
+        android:id="@+id/btn_ExternalPublic"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"
+        android:text="External Public"/>
+    <Button
+        android:onClick="gotoNextAct"
+        android:id="@+id/btn_NextAct"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="410dp"
+        android:text="Next" />
+
+</RelativeLayout>

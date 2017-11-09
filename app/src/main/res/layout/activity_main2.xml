@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.caampued.externalstorage.Main2Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reading Data"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:onClick="loadSharedPref"
+        android:id="@+id/btn_LoadSharedPref"
+        android:layout_width="250dp"
+        android:text="Shared Preferences"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:onClick="loadInternalStorage"
+        android:id="@+id/btn_LoadInternalStorage"
+        android:layout_width="250dp"
+        android:text="Internal Storage"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+
+    <Button
+        android:onClick="loadIntCache"
+        android:id="@+id/btn_LoadInternalCache"
+        android:layout_width="250dp"
+        android:text="Internal Cache"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"/>
+    <Button
+        android:onClick="saveExternalCache"
+        android:id="@+id/btn_LoadExternalCache"
+        android:layout_width="250dp"
+        android:text="External Cache"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"/>
+    <Button
+        android:onClick="saveExternalStorage"
+        android:id="@+id/btn_LoadExternalStorage"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="External Storage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"/>
+    <Button
+        android:onClick="saveExternalPublic"
+        android:id="@+id/btn_LoadExternalPublic"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="External Public"/>
+    <Button
+        android:onClick="gotoPreviousAct"
+        android:id="@+id/btn_PreviousAct"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:text="Previous" />
+
+    <TextView
+        android:id="@+id/etDisplay"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"/>
+
+</RelativeLayout>
